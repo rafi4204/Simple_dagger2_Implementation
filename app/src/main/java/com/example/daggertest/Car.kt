@@ -1,4 +1,6 @@
 package com.example.daggertest
 
-class Car(val title:String,val model:String,val capacity:Int) {
+import javax.inject.Inject
+
+class Car @Inject constructor(val title:String,val model:String,val capacity:Int) {
 }
