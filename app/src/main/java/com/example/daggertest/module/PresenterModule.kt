@@ -1,5 +1,6 @@
-package com.example.daggertest
+package com.example.daggertest.module
 
+import com.example.daggertest.Car
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -8,7 +9,7 @@ import javax.inject.Singleton
 class PresenterModule {
     @Provides
     @Singleton
-    fun provideCar():Car =Car("tyota","g4",10)
+    fun provideCar(): Car = Car("tyota", "g4", 10)
 
 
 }
